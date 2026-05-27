@@ -18,7 +18,11 @@ import { Icon } from 'astro-icon/components';
         Terima kasih telah memverifikasi email Anda. Proses verifikasi berhasil, Anda sekarang dapat kembali ke aplikasi LastBite untuk melanjutkan.
       </p>
 
-      <a href="lastbite://" class="inline-flex items-center justify-center gap-2 bg-lastbite-green text-white px-8 py-3.5 rounded-xl font-bold text-sm hover:bg-green-700 transition-colors w-full group">
+      <a 
+        href="#"
+        onclick="window.location.href='lastbite://'; setTimeout(() => alert('Di perangkat seluler, ini akan membuka aplikasi LastBite. Jika Anda di PC, silakan buka aplikasi di HP Anda.'), 500); return false;" 
+        class="inline-flex items-center justify-center gap-2 bg-lastbite-green text-white px-8 py-3.5 rounded-xl font-bold text-sm hover:bg-green-700 transition-colors w-full group cursor-pointer"
+      >
         <Icon name="solar:smartphone-bold" class="w-5 h-5 group-hover:scale-110 transition-transform" />
         Buka Aplikasi LastBite
       </a>
