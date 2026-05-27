@@ -1,0 +1,31 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import { Icon } from 'astro-icon/components';
+---
+
+<PageLayout title="Verifikasi Email" breadcrumb="Verifikasi Email">
+  <div class="py-20 px-6 flex items-center justify-center min-h-[60vh]">
+    <div class="max-w-md w-full bg-white rounded-3xl shadow-sm border border-gray-100 p-8 text-center">
+      <div class="w-20 h-20 bg-green-50 rounded-full flex items-center justify-center mx-auto mb-6">
+        <Icon name="solar:check-circle-bold" class="w-10 h-10 text-lastbite-green" />
+      </div>
+      
+      <h1 class="font-heading text-2xl font-bold text-gray-900 mb-3">
+        Email Terverifikasi!
+      </h1>
+      
+      <p class="font-body text-gray-600 mb-8">
+        Terima kasih telah memverifikasi email Anda. Proses verifikasi berhasil, Anda sekarang dapat kembali ke aplikasi LastBite untuk melanjutkan.
+      </p>
+
+      <a href="lastbite://" class="inline-flex items-center justify-center gap-2 bg-lastbite-green text-white px-8 py-3.5 rounded-xl font-bold text-sm hover:bg-green-700 transition-colors w-full group">
+        <Icon name="solar:smartphone-bold" class="w-5 h-5 group-hover:scale-110 transition-transform" />
+        Buka Aplikasi LastBite
+      </a>
+      
+      <p class="mt-6 text-xs text-gray-400">
+        Jika tombol di atas tidak berfungsi, silakan buka aplikasi secara manual melalui perangkat Anda.
+      </p>
+    </div>
+  </div>
+</PageLayout>
